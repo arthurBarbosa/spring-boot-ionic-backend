@@ -11,13 +11,12 @@ import com.arthurbarbosa.cursomc.services.exceptions.ObjectNotFounException;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {
-	
+
 	@ExceptionHandler(ObjectNotFounException.class)
-	public ResponseEntity<StandardError> objectNotFound(ObjectNotFounException e,
-			HttpServletRequest request){
+	public ResponseEntity<StandardError> objectNotFound(ObjectNotFounException e, HttpServletRequest request) {
 		StandardError err = new StandardError(HttpStatus.NOT_FOUND.value(), e.getMessage(), System.currentTimeMillis());
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(err);
-		
+
 	}
 
 }
