@@ -1,0 +1,215 @@
+[33mcommit 15e8629679c63f86cae63d7939c8d153b89a6430[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Sat Jul 7 16:15:20 2018 -0300
+
+    implementando o toString do pedido e item de pedido
+
+[33mcommit 9ba0a7b5ed345d0209c910cdc5bb2dc7f7d88cd0[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Fri Jul 6 23:13:26 2018 -0300
+
+    criação do perfil de desenvolvimento
+
+[33mcommit af5b8543699e459371d226ddf4df39d38164f242[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Fri Jul 6 22:12:56 2018 -0300
+
+     criando profile de teste
+
+[33mcommit 3e59cb7dac6e94141ecb925360e0cd050d4b18ac[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Fri Jul 6 19:00:54 2018 -0300
+
+    inserção de Pedido
+
+[33mcommit 72078f486eb929641feaf7ad2a4f952472d7ec60[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Thu Jun 28 01:45:05 2018 -0300
+
+    Busca de Produtos por nome e Categorias
+
+[33mcommit 05540a766ff05085269659b468601a8531676edc[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Wed Jun 27 23:23:22 2018 -0300
+
+    Validação customizada na atualização de cliente
+
+[33mcommit 5b074fe829f70d56d74676dc1093ca020f430c52[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Wed Jun 27 22:21:26 2018 -0300
+
+    Validação customizada: email não repitido de Cliente
+
+[33mcommit 00132f02e2d6adf03d7bf271d75ac54e524a64cf[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Wed Jun 27 22:04:10 2018 -0300
+
+    Validação customizada de CPF ou CNPJ na inserção do cliente
+
+[33mcommit 57f038175e3f03ca1da99bf439bbfa87ab641594[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Wed Jun 27 20:07:07 2018 -0300
+
+    Deletando um Cliente em cascata
+
+[33mcommit dba085eeed42b55490baf30757eefdce175e1452[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Wed Jun 27 19:52:46 2018 -0300
+
+    Inserido um novo Cliente com Post
+
+[33mcommit 0c334ec9e7bec505fa8f81980d548af23c819fc4[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Sat Jun 23 08:00:54 2018 -0300
+
+    ClienteNewDTO ainda não esta completo
+
+[33mcommit 34c5a7b6df797c354f6e4678dcb62b5940d16fa9[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Tue Jun 19 22:07:19 2018 -0300
+
+    Correções: update em CategoriaService e construtor de pagamento
+
+[33mcommit b0920c3e2aa61d653e7992a556481dd5c9eb8222[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Tue Jun 19 21:06:53 2018 -0300
+
+    PUT, DELETE E GET para Cliente
+
+[33mcommit e5ba1cde0ce39665da16fdb7132c20252681ca01[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Tue Jun 19 20:15:00 2018 -0300
+
+    Personalizando o retorno da validação
+
+[33mcommit 742375f33ad393924993fa8b614b3723af35b835[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Tue Jun 19 18:04:15 2018 -0300
+
+    Validação sintatica com  Bean Validation
+
+[33mcommit 8ed2c410e0803ff41a64fe1850ed365efaea4671[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Tue Jun 19 17:04:51 2018 -0300
+
+    Paginação com parametros opcionais na requisição
+
+[33mcommit abe85effa65fa901c5f0f1f2ebbdc12d05eac976[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Tue Jun 19 15:52:07 2018 -0300
+
+    Listando todas as categorias com DTO
+
+[33mcommit cd45093e20df4e00a1952e329d9be35030d7c981[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Tue Jun 19 15:19:36 2018 -0300
+
+    Deletando uma categoria com DELETE
+
+[33mcommit 3cefd7e4569e93e2061a24b9fe4c11c9fca52fba[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Tue Jun 19 14:49:20 2018 -0300
+
+    Atualizando categoria com PUT
+
+[33mcommit 1258b1b5a65a3be74626eb86a563d21885c0f9e7[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Tue Jun 19 14:14:33 2018 -0300
+
+    inserindo uma nova Categoria com POST
+
+[33mcommit 9bcbcc54d54fb41f99b2fb822aff344c66813de2[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Tue Jun 19 13:04:42 2018 -0300
+
+    Atualização: somente de JsonIgnore
+
+[33mcommit 56da72fdb73726dbaf1a54ece7076b0da5385ec0[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Tue Jun 19 12:33:28 2018 -0300
+
+    Enpoint /pedidos/{id} disponibilizados
+
+[33mcommit 2764775de59a68b9dee560ae9b6e92b39a3ac73b[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Tue Jun 19 10:54:54 2018 -0300
+
+    ItemPedido e ItemPedidoPK
+
+[33mcommit 04dbd8ec1ccfb4dd80c8efb50e83446f2bd80f5e[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Sun Jun 17 20:23:47 2018 -0300
+
+    Pedido, EstadoPagamento, Pagamento
+
+[33mcommit 299fb805f0a8e8cc3712da5a95215e922c4b4de5[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Sun Jun 17 18:34:32 2018 -0300
+
+    Endpoint /clientes/{id} disponivel
+
+[33mcommit 82fbf3682272a890f3a0725c19ef75640d6b370a[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Sun Jun 17 17:54:38 2018 -0300
+
+    cliente, tipoCliente, telefones e endereços
+
+[33mcommit 6300cfa975dcb02a1938e8a71e59cf5f60485874[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Sun Jun 17 12:58:18 2018 -0300
+
+    Criação do Estado e Cidade
+
+[33mcommit 6ea738313797f70b314a62ec9b2668c16df7c184[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Sun Jun 17 12:04:05 2018 -0300
+
+    correçao do endpoint /categoria/{id}
+
+[33mcommit 8155db47f78560b3d45abf7dfe53b265a4f1cf49[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Sun Jun 17 11:03:23 2018 -0300
+
+    implementação da  classe exception
+
+[33mcommit 5d573c776b21f7ecf0b47a7f5cf3a7296796f10d[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Fri Jun 15 21:33:12 2018 -0300
+
+    Produto e associacão muitos para muitos
+
+[33mcommit 5d87f604fd61ee736b8963c4412f879f381ac65b[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Fri Jun 15 19:43:42 2018 -0300
+
+    criando a operação de instanciação
+
+[33mcommit fa116766ffabc20bfe339348a2b7b6a8ade7af97[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Fri Jun 15 19:27:33 2018 -0300
+
+    criação do repository e service para categoria
+
+[33mcommit 7d900f3af4380e7735f299b41482ffcffa5fada0[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Fri Jun 15 17:48:16 2018 -0300
+
+    banco de dados h2 e criãção automatica da base de dados
+
+[33mcommit 3c34f4c3149d26c8603d9d39d1b69877b38765c6[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Thu Jun 14 16:26:44 2018 -0300
+
+    Testando a primeira classe de dominio Categoria
+
+[33mcommit 5d8d9a1e142c180826c3303ce5786b6cbcecda83[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Thu Jun 14 16:02:12 2018 -0300
+
+    Testando o REST, funcionando perfeitamente
+
+[33mcommit 2190594bc4d65638b9517c316ed6bdce1498bb60[m
+Author: Arthur Barbosa <arthurbruno03@gmail.com>
+Date:   Thu Jun 14 15:33:20 2018 -0300
+
+    Criação do projeto Spring
