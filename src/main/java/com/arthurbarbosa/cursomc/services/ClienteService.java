@@ -1,5 +1,6 @@
 package com.arthurbarbosa.cursomc.services;
 
+import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 
@@ -25,6 +26,7 @@ import com.arthurbarbosa.cursomc.security.UserSS;
 import com.arthurbarbosa.cursomc.services.exceptions.AuthorizationException;
 import com.arthurbarbosa.cursomc.services.exceptions.DataIntegrityException;
 import com.arthurbarbosa.cursomc.services.exceptions.ObjectNotFounException;
+import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public class ClienteService {
@@ -37,6 +39,9 @@ public class ClienteService {
 
 	@Autowired
 	private EnderecoRepository enderecoRepository;
+
+//	@Autowired
+//	private S3Service s3Service;
 
 	public Cliente find(Integer id) {
 		
@@ -125,5 +130,9 @@ public class ClienteService {
 		newObj.setNome(obj.getNome());
 		newObj.setEmail(obj.getEmail());
 	}
+
+//	public URI uploadProfilePicture(MultipartFile multipartFile){
+//		return s3Service.uploadFile(multipartFile);
+//	}
 
 }
