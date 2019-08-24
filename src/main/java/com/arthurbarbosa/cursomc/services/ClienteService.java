@@ -40,8 +40,8 @@ public class ClienteService {
 	@Autowired
 	private EnderecoRepository enderecoRepository;
 
-//	@Autowired
-//	private S3Service s3Service;
+	@Autowired
+	private S3Service s3Service;
 
 	public Cliente find(Integer id) {
 		
@@ -131,8 +131,8 @@ public class ClienteService {
 		newObj.setEmail(obj.getEmail());
 	}
 
-//	public URI uploadProfilePicture(MultipartFile multipartFile){
-//		return s3Service.uploadFile(multipartFile);
-//	}
+	public URI uploadProfilePicture(MultipartFile multipartFile){
+		return s3Service.uploadFile(multipartFile);
+	}
 
 }

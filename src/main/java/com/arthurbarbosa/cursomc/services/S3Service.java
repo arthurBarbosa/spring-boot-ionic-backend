@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -17,6 +18,7 @@ import java.io.Serializable;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+@Service
 public class S3Service implements Serializable {
 
     private static final Logger LOG = LoggerFactory.getLogger(S3Service.class);
@@ -27,7 +29,7 @@ public class S3Service implements Serializable {
     @Value("${s3.bucket}")
     private String bucketName;
 
-//    public void uploadFile(String localFilePath){
+    //    public void uploadFile(String localFilePath){
 //        try {
 //            File file = new File(localFilePath);
 //            LOG.info("iniciando o upload");
@@ -40,24 +42,24 @@ public class S3Service implements Serializable {
 //            LOG.info("AmazonClientException" + erroCliente.getMessage());
 //        }
 //    }
-public URI uploadFile(MultipartFile multipartFile) {
-    try {
-        //File file = new File(localFilePath);
-        String nomeArquivo = multipartFile.getName();
-        InputStream iStream = multipartFile.getInputStream();
-        String tipoDoConteudo = multipartFile.getContentType();
-        return uploadFile(iStream, nomeArquivo, tipoDoConteudo);
-    }catch(IOException erroIO) {
-        throw new RuntimeException("Erro de IO "+erroIO.getMessage());
+    public URI uploadFile(MultipartFile multipartFile) {
+        try {
+            //File file = new File(localFilePath);
+            String nomeArquivo = multipartFile.getName();
+            InputStream iStream = multipartFile.getInputStream();
+            String tipoDoConteudo = multipartFile.getContentType();
+            return uploadFile(iStream, nomeArquivo, tipoDoConteudo);
+        } catch (IOException erroIO) {
+            throw new RuntimeException("Erro de IO " + erroIO.getMessage());
+        }
     }
-}
 
     public URI uploadFile(InputStream inputStream, String fileName, String tipo) {
         try {
             ObjectMetadata meta = new ObjectMetadata();
             meta.setContentType(tipo);
             LOG.info("Iniciando upload");
-           // s3cliente.putObject(bucketName, "NomeDoArquivo.jpg", file);
+            // s3cliente.putObject(bucketName, "NomeDoArquivo.jpg", file);
             s3cliente.putObject(bucketName, fileName, inputStream, meta);
             LOG.info("Upload finalizado");
 
