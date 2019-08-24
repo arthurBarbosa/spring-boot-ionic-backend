@@ -4,6 +4,7 @@ import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.ObjectMetadata;
+import com.arthurbarbosa.cursomc.services.exceptions.FileException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,7 +51,7 @@ public class S3Service implements Serializable {
             String tipoDoConteudo = multipartFile.getContentType();
             return uploadFile(iStream, nomeArquivo, tipoDoConteudo);
         } catch (IOException erroIO) {
-            throw new RuntimeException("Erro de IO " + erroIO.getMessage());
+            throw new FileException("Erro de IO " + erroIO.getMessage());
         }
     }
 
@@ -65,7 +66,7 @@ public class S3Service implements Serializable {
 
             return s3cliente.getUrl(bucketName, fileName).toURI();
         } catch (URISyntaxException e) {
-            throw new RuntimeException("Erro ao tentar converter URL em URI");
+            throw new FileException("Erro ao tentar converter URL em URI");
         }
     }
 }
